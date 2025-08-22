@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Contact</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div class="container">
@@ -43,5 +44,13 @@
   <footer>
     <p>&copy; 2024 My Portfolio. All rights reserved.</p>
   </footer>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("✅ Thank you for contacting me! I will get back to you soon.");
+      this.reset(); // Clears form after submit
+    });
+  </script>
+  
 </body>
 </html>
